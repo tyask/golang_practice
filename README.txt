@@ -16,14 +16,14 @@ IsPrime関数は、素数判定をする関数です。UTが通るように実�
   {Title}/{Outher}/{Publisher} (¥{Price})
 ・SetPriceメソッドは、Priceの値を変更するメソッドです。
 
-4) booble (10min): slice/mapの練習
-本検索エンジンBoobleを作成し、UTが通るようにメソッドを実装してください。
-・構造体Boobleを定義し、フィールドとしてBookのスライスを持たせてください。
+4) book_search_engine (10min): slice/mapの練習
+本検索エンジンを作成し、UTが通るようにメソッドを実装してください。
+・構造体BookSearchEngineを定義し、フィールドとしてBookのスライスを持たせてください。
 ・SearchWithPrefixメソッドは、タイトルを前方一致で検索するメソッドです。
 ・GroupByPublisherメソッドは、本の一覧をPublisherごとに分類して返すメソッドです。
 
-5) booble_goroutine (20min): goroutine, channelの練習
-本検索エンジンBoobleを拡張し、UTが通るようにメソッドを実装してください。
+5) book_search_engine_goroutine (20min): goroutine, channelの練習
+本検索エンジンBookSearchEngineを拡張し、UTが通るようにメソッドを実装してください。
 ・SearchWithPrefixMultiメソッドは、SearchWithPrefixの引数を複数渡せるように改良したメソッドです。
   ある本が複数のprefixに引っかかったとしても、同じタイトルの本はただ1つだけ返すようにしてください。
   また、探索結果は本のタイトルの昇順にソートしてください。

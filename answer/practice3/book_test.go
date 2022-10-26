@@ -21,9 +21,15 @@ func (b *Book) SetPrice(price int) {
 }
 
 func TestStringForBook(t *testing.T) {
-	b := Book{Title: "aaa", Outher: "bbb", Publisher: "ccc", Price: 1000}
-	if b.String() != "aaa/bbb/ccc (¥1000)" {
-		t.Error("Should be 'aaa/bbb/ccc (¥1000)'")
+	b := Book{
+		Title:     "The Go Programming Language",
+		Outher:    "Alan Donovan, Brian Kernighan",
+		Publisher: "Addison-Wesley Professional",
+		Price:     2336,
+	}
+	expected := "The Go Programming Language/Alan Donovan, Brian Kernighan/Addison-Wesley Professional (¥2336)"
+	if b.String() != expected {
+		t.Errorf("Should be '%s'", expected)
 	}
 }
 
