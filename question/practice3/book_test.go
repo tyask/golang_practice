@@ -1,23 +1,25 @@
 package main
 
 import (
-	"fmt"
 	"testing"
 )
 
 type Book struct {
-	Title     string
-	Outher    string
-	Publisher string
-	Price     int
+	// TODO 以下のフィールドを定義してください。
+	// Title     (string)
+	// Outher    (string)
+	// Publisher (string)
+	// Price     (int)
 }
 
-func (b *Book) String() string {
-	return fmt.Sprintf("%s/%s/%s (%d)", b.Title, b.Outher, b.Publisher, b.Price)
+func ( /* TODO receiverを定義してください */ ) String() string {
+	// TODO 以下の形式でBook構造体の文字列表現を返すように実装してください。
+	// {Title}/{Outher}/{Publisher} ({Price})
+	return ""
 }
 
-func (b *Book) SetPrice(price int) {
-	b.Price = price
+func ( /* TODO receiverを定義してください */ ) SetPrice(price int) {
+	// TODO Book.Priceに値を設定するように実装してください。
 }
 
 func TestStringForBook(t *testing.T) {
