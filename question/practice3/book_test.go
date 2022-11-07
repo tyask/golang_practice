@@ -4,6 +4,11 @@ import (
 	"testing"
 )
 
+/*
+[演習]
+Book構造体にフィールドを定義し、String/SetPriceメソッドを実装してください。
+*/
+
 type Book struct {
 	// TODO 以下のフィールドを定義してください。
 	// Title     (string)

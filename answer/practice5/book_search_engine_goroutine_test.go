@@ -9,6 +9,11 @@ import (
 	"golang.org/x/exp/maps"
 )
 
+/*
+[演習]
+BookSearchEngineのSearchWithPrefixMulti/SearchWithPrefixMultiAsyncメソッドを実装してください。
+*/
+
 type Book struct {
 	Title     string
 	Outher    string

@@ -6,6 +6,11 @@ import (
 	"testing"
 )
 
+/*
+[演習]
+BookSearchEngineのSearchWithPrefix/GroupByPublisherメソッドを実装してください。
+*/
+
 type Book struct {
 	Title     string
 	Outher    string

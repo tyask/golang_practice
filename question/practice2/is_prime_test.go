@@ -2,6 +2,11 @@ package main
 
 import "testing"
 
+/*
+[演習]
+IsPrimeメソッドを実装してください。
+*/
+
 func IsPrime(n int) bool {
 	// TODO nが素数であればtrue、そうでなければfalseを返すように実装してください。
 	// なお、素数とは、2以上の自然数で正の約数が1と自分自身のみであるもののことです。

@@ -5,6 +5,11 @@ import (
 	"testing"
 )
 
+/*
+[演習]
+BookSearchEngineのSearchWithPrefixMulti/SearchWithPrefixMultiAsyncメソッドを実装してください。
+*/
+
 type Book struct {
 	Title     string
 	Outher    string
@@ -16,15 +21,16 @@ type BookSearchEngine struct {
 	books []Book
 }
 
-func (b *BookSearchEngine) SearchWithPrefix(prefix string) []Book {
-	return nil
-}
-
 func (b *BookSearchEngine) SearchWithPrefixMulti(prefixes ...string) []Book {
+	// TODO タイトルがprefixesのいずれかにマッチする本を検索し結果を返すように実装してください。
+	// ある本が複数のprefixに引っかかったとしても、同じタイトルの本はただ1つだけ返すようにしてください。
+	// また、探索結果は本のタイトルの昇順にソートしてください。
 	return nil
 }
 
 func (b *BookSearchEngine) SearchWithPrefixMultiAsync(prefixes ...string) []Book {
+	// TODO SearchWithPrefixMultiのマルチスレッド版を実装してください。
+	// prefixesの各要素による探索処理をそれぞれ別スレッド(goroutine)で実行するようにし、最後にその結果を集約して返すようにしてください。
 	return nil
 }
 

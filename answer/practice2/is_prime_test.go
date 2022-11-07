@@ -2,6 +2,11 @@ package main
 
 import "testing"
 
+/*
+[演習]
+IsPrimeメソッドを実装してください。
+*/
+
 func IsPrime(n int) bool {
 	if n <= 1 {
 		return false
